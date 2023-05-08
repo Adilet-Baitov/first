@@ -7,21 +7,24 @@
         border-color: $primary;
     }
     &:focus {
-        background-color: $secondary !important;
-        border-color: $secondary !important;
+        background-color: $primary !important;
+        border-color: $primary !important;
         color: $white !important;
     }
 }
 .btn-primary {
-    background-color: $primary;
+    background-color: $white;
+    color: $primary;
     border-color: $primary;
     &:hover {
-        background-color: $secondary !important;
-        border-color: $secondary !important;
+        background-color: $primary !important;
+        border-color: $primary !important;
+        color: $white;
     }
     &:focus {
-        background-color: $dark-lite !important;
-        border-color: $dark-lite !important;
+        background-color: $primary !important;
+        border-color: $white !important;
+        color: $white;
     }
 }
 
@@ -73,4 +76,19 @@
     height: 100px;
     max-height: 100px;
     min-height: 100px;
+}
+
+.btn-card--desc {
+    text-align: center;
+    background-color: $grey-lite;
+    transition: 0.3s ease;
+    &:hover, &:active , &:focus {
+        background-color: $grey !important;
+        color: $white !important;   
+        transition: 0.3s ease;
+    }
+}
+
+.text-links {
+    padding: 10px 15px;
 }

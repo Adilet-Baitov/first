@@ -1,10 +1,20 @@
 .header {
     width: 100% !important;
+    height: 70px !important;
     position: fixed;
     left: 0;
     top: 0;
     background-color: $white;
     z-index: 100;
+    font-family: Open-sans, sans-serif;
+    
+    &__container {
+        height: 100% !important;
+        position: relative;
+        nav  {
+            height: inherit !important;
+        }
+    }
     
     &__btn {
 
@@ -21,4 +31,104 @@
             opacity: 0.8;
         }
     }
+    .navbar {
+        &__background { 
+            background-color: $white !important;
+            border-radius: 3px;
+            
+            
+
+            &--pad {
+                padding: 5px;
+                justify-content: flex-end;
+                a {
+                    font-size: 1.5rem !important;
+                    &:hover {
+                        color: $white !important;
+                    }
+                    &:focus {
+                        color: $white !important;
+                    }
+                }
+            }
+        }
+        &__buttons--display {
+            
+
+            &:hover {
+
+                .dropdown-menu {
+                    display: block !important;
+                    margin-top: 52px !important;
+
+                    width: fit-content !important;
+                    display: flex  !important;
+                    gap: 10px;
+                    // flex-wrap: wrap;
+                    // flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: center;
+                    
+                    
+                }
+                
+            }
+        }
+        &__link--style {
+            background-color: $white !important;
+            font-size: 1.25rem !important;
+            border-color: $white !important;
+            color: $dark;
+            transition: 0.3s;
+            &:hover {
+                color: $primary;
+                transition: 0.3s;
+            }
+        }
+        .logo-text {
+            text-transform: uppercase;
+        }
+        .dropdown-item {
+            transition: 0.3s;
+
+
+            &:hover {
+                background-color: $primary;
+                color: $white;
+                border-radius: 5px;
+                transition: 0.3s;
+            }
+        }
+        .dropdown-menu {
+            padding: 10px 20px !important;
+            border-color: $primary;
+            li {
+                .dropdown-divider {
+                    margin: 1px 0 !important;
+                }
+            }
+        }   
+    }
+    .basket-count {
+        position: relative;
+        &::before {
+            content: attr(data-count);
+            font-size: 0.5rem;
+            padding: 2px 5px;
+            border-radius: 50%;
+            background-color: $primary;
+            color: $white;
+            z-index: 2;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+        }
+        &[data-count=""], &[data-count="0"] {
+            &::before {
+                display: none !important;
+            }
+        }
+    }
+
+
 }

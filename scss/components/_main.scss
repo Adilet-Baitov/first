@@ -17,7 +17,7 @@
             object-fit: cover;
             height: 100%; 
             width: 100%;
-            filter: brightness(0.5);
+            filter: brightness(0.7);
         }
     }
 
@@ -81,11 +81,29 @@
         align-items: center;
         justify-content: center;
     }
+    // &__text {
+    //     text-shadow: -0   -1px 1px #FFFFFF,
+    //     0   -1px 1px #FFFFFF,
+    //    -0    1px 1px #FFFFFF,
+    //     0    1px 1px #FFFFFF,
+    //    -1px -0   1px #FFFFFF,
+    //     1px -0   1px #FFFFFF,
+    //    -1px  0   1px #FFFFFF,
+    //     1px  0   1px #FFFFFF,
+    //    -1px -1px 1px #FFFFFF,
+    //     1px -1px 1px #FFFFFF,
+    //    -1px  1px 1px #FFFFFF,
+    //     1px  1px 1px #FFFFFF,
+    //    -1px -1px 1px #FFFFFF,
+    //     1px -1px 1px #FFFFFF,
+    //    -1px  1px 1px #FFFFFF,
+    //     1px  1px 1px #FFFFFF;
+    // }
 }
 
 .two {
     height: fit-content;
-    padding: 3rem 0;
+    padding: 1.5rem 0 0 0;
 
     &__container {
         height: 100%;
@@ -123,6 +141,16 @@
 }
 
 .three {
+    &__container {
+        .d-flex {
+            .link {
+                &:hover {
+                    border-bottom: 1px solid $primary;
+                    color: $primary !important;
+                }
+            }
+        }
+    }
     &__carts {
         width: 100%;
         height: fit-content;
@@ -166,7 +194,7 @@
         }
         &:hover {
             & h4 {
-                color: $primary;
+                color: $white;
             }
             & img {
                 transform: scale(1.15);
@@ -189,6 +217,7 @@
     }
 
     &__cart {
+
         width: 300px;
         margin: 0.5rem;
         height: fit-content;
@@ -208,6 +237,8 @@
 
         & p {
             line-height: 1.25rem;
+            max-height: 100px !important;
+            overflow: hidden;
         }
 
         &:hover {
@@ -218,6 +249,7 @@
             }
         }
     }
+    
 }
 
 .five {
@@ -232,7 +264,11 @@
         align-items: center;
         justify-content: center;
     }
-
+    .form-control {
+        &:focus {
+            border-color: $primary !important;
+        }
+    }
 
     & .msg-form {
         width: 60%;
@@ -247,15 +283,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: $dark-lite;
+    background-color: $background;
+    &__text {
+        color: $primary !important;
+        &--big {
+            font-size: 5rem !important;
+        }
+        &--small {
+            font-size: 1.5rem !important;
+        }
+    }
     &__grid  {
         display: grid !important;
-        grid-template-columns: 80% 20%;
+        grid-template-columns: 75% 25%;
     }
     .flex-column {
-        width: inherit !important;
+        width: inherit !important; 
+        align-items: center;
         p  {
             text-align: center !important;
         }
     }
+    &__container {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        align-items: flex-start; 
+    }
+}
+
+//--footer
+
+.footer {
+    background: $background-footer;
 }

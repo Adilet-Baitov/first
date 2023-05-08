@@ -1,0 +1,39 @@
+.main-cards-board {
+    margin-top: 2rem;
+    padding: 3rem 0 4rem 0 !important;
+
+    .path_nav {
+        display: flex;
+        gap: 10px;
+    }
+}
+.cards-board {
+    display: flex;
+    flex-direction: row !important;
+    &__grid {
+        display:grid;
+        grid-template-columns: 1fr 1fr 1fr ;
+    }
+    &--desk {
+        display: grid;
+        grid-template-columns: 1fr 4fr ;
+    }
+
+    nav {
+        width: 100% !important;
+        border-bottom: none !important;        
+        transition: 0.3s !important;
+        margin-right: 10px !important;
+        .nav-link {
+            border-radius: 5px;
+            &:hover , &:focus {
+                border-color: $primary !important;
+            }
+        }
+        .active {
+            background-color: $primary !important;
+            color: $white !important;
+        }
+    }
+
+}

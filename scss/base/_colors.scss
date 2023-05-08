@@ -1,21 +1,26 @@
 $white: #ffffff;
 $lite: #f6f6f6;
 $grey: #969696;
+$grey-lite: #e9e9e9;
 $lite-darker: #f2f2f2;
 $lite-op: #ffffffc4;
 
-$dark: #1c1f1f;
-$dark-lite: #292a2a;
+$dark: #3e454c;
+$dark-lite: #fbfbfb;
 $dashed: #8282821f;
 $none: #211f1c00;
 
+$background: #BBDCFF ;
+$background-footer: #3e454c;
+
 $shadow-sm: #211f1c16;
 
-$primary: #4cb887;
+$primary: #083C89;
 $primary-op: #4cb887a0;
-$secondary: #489b76;
+$secondary: #416daf;
 
-$success: #5ec383;
+$new: #039376;
+$success: #344867;
 $danger: #e66b6d;
 $warning: #e6b76b;
 
@@ -27,11 +32,20 @@ $warning: #e6b76b;
     color: $primary !important;
 }
 
+.text-links {
+    color: $background !important;
+}
+
 .text-fade {
     color: #969696;
 }
 
+
 // bg color
 .bg-none {
     background-color: $none !important;
+}
+
+.bg-button {
+    background-color: $primary !important;
 }

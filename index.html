@@ -9,7 +9,10 @@
     <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.min.css">
     <link rel="stylesheet" href="icons/iconfont/icofont.min.css">
-<link rel="stylesheet" href="/css/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    
     <!-- @ favicon -->
     <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
 
@@ -22,69 +25,122 @@
 
         <!-- header -->
         <header class="header border-bottom">
-            <div class="container header__container">
-                <nav class="navbar navbar-expand-lg navbar-light bg-none">
-                  <div class="container-fluid">
-                    <a class="navbar-brand fs-3 text-primary" href="#">Honkon</a>
+          <nav class="navbar navbar__center navbar-expand-lg navbar-light bg-none">
+            <div class="container-fluid">
+              <a class="navbar-brand fs-3 logo-text fw-bold text-primary" href="#">Honkon</a>
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
 
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                      
-                      <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-center">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Каталог</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Акции</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Обучение</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Услуги</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Оплата</a>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" aria-current="page" href="#">Доставка</a>
-                      </ul>
+              <div class="collapse navbar-collapse navbar__background" id="navbarSupportedContent">
+                
+              <div class="navbar-links mb-2 mb-lg-0 w-100 d-flex justify-content-center">
+                <ul class="navbar-nav text-end">
+                  <div class="btn-group navbar__buttons--display">
+                    <a href="#" class="link text-links dropdown__hover h4">Каталог</a>
+                    <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                      <li><a class="dropdown-item" href="#">
+                        Лазерное оборудование                    
+                      </a></li>
 
-                      <!-- buttons -->
-                      <div class="d-flex ">
-                        <a class="btn header__btn" href="#">
-                            <i class="icofont-ui-call"></i>
-                        </a>
-                        <a class="btn header__btn" href="#">
-                            <i class="icofont-search-2"></i>
-                        </a>
-                        <a class="btn header__btn" href="#">
-                          <i class="icofont-user-alt-3"></i>
-                        </a>
-                        <a class="btn header__btn" href="#">
-                            <i class="icofont-cart"></i>
-                        </a>
-                      </div>
-                    </div>
+                      <li><a class="dropdown-item d-block" href="#">
+                        Оборудование для депиляции                                           
+                      </a></li>
+
+                      <li><a class="dropdown-item" href="#">
+                        Оборудование для депиляции                        
+                      </a></li>
+                    </ul>
                   </div>
-                </nav>
+                </ul>
+                <ul class="navbar-nav text-end ">
+                  <div class="btn-group navbar__buttons--display">
+                    <a href="#" class="link text-links dropdown__hover h4">Лечение</a>
+                    <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                      <li><a class="dropdown-item" href="#">Лазерное оборудование                        
+                      </a></li>
+
+                      <li><a class="dropdown-item d-block" href="#">Оборудование для депиляции                       
+                      </a></li>
+
+                      <li><a class="dropdown-item" href="#">
+                        Оборудование для депиляции
+                      </a></li>
+                    </ul>
+                  </div>
+                </ul>
+                <ul class="navbar-nav text-end ">
+                  <div class="btn-group navbar__buttons--display">
+                    <a href="#" class="link text-links dropdown__hover h4">Решения</a>
+                    <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                      <li><a class="dropdown-item" href="#">Замедляющий старение                        
+                      </a></li>
+
+                      <li><a class="dropdown-item d-block" href="#">Чистка лица                       
+                      </a></li>
+
+                      <li><a class="dropdown-item" href="#">
+                        Удаление волос
+                      </a></li>
+                      <li><a class="dropdown-item" href="#">
+                        Выберите диодный лазер для эпиляции.
+                      </a></li>
+                      <li><a class="dropdown-item" href="#">
+                        Пигментация
+                      </a></li>
+                    </ul>
+                  </div>
+                </ul>
+                <ul class="navbar-nav text-end ">
+                  <div class="btn-group navbar__buttons--display">
+                    <a href="#" class="link text-links dropdown__hover h4">О нас</a>
+                    <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                      <li><a class="dropdown-item" href="#">Лазерное оборудование                        
+                      </a></li>
+
+                      <li><a class="dropdown-item d-block" href="#">Оборудование для депиляции                       
+                      </a></li>
+
+                      <li><a class="dropdown-item" href="#">
+                        Оборудование для депиляции
+                      </a></li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+                
+                <!-- buttons -->
+                <div class="d-flex navbar__background--pad">
+                  <a class="btn header__btn w-25" href="#">
+                      <i class="icofont-ui-call"></i>
+                  </a>
+                  <a class="btn header__btn w-25" href="#">
+                      <i class="icofont-search-2"></i>
+                  </a>
+                  <a class="btn header__btn w-25" href="#">
+                    <i class="icofont-user-alt-3"></i>
+                  </a>
+                  <a class="btn header__btn basket-count w-25" data-count="0" href="#">
+                      <i class="icofont-cart"></i>
+                  </a>
+                </div>
+              </div>
             </div>
+          </nav>
         </header>
 
         <!-- main -->
         <main class="main">
 
-            <section class="first">
+            <section class="first mt-5">
 
               <div class="container first__container">
                 <div class="row d-flex first__flex justify-content-between w-100">
 
                   <div class="col-xxl-6 col-xl-6 col-lg-6 col-md-8 col-sm-8 col-10 first__left">
 
-                      <h2 class="fs-1 text-primary my-3">
+                      <h2 class="fs-1 first__text text-primary my-3">
                           Косметология нового времени
                       </h2>
 
@@ -93,7 +149,7 @@
                           Самое современное косметологичское оборудование и <br>
                           полный сервесный пакет, всего в одном нажатии
                         </p>
-                        <i class="icofont-rounded-double-right fs-1 text-primary arrow-anim-right"></i>
+                        <i class="icofont-rounded-double-right fs-1 text-primary first__text arrow-anim-right"></i>
                       </div>
 
                   </div>
@@ -132,7 +188,7 @@
               </div>
 
               <div class="first__img">
-                <img src="imgs/bg/beautysystems-cosmetologicheskie-apparaty-100121.jpg" alt="" class="img-fluid">
+                <img src="imgs/bg/main_1506678016793.jpg" alt="" class="img-fluid">
               </div>
             </section>
 
@@ -171,7 +227,7 @@
               </div>
             </section>
 
-            <section class="three  mt-5">
+            <section class="three  mt-2">
               <div class="container three__container">
 
                 <div class="w-100 d-flex justify-content-between align-items-center border-bottom py-4">
@@ -206,12 +262,12 @@
               </div>
             </section>
 
-            <section class="fore mt-5">
+            <section class="fore mt-2">
               <div class="container fore__container">
 
                 <div class="w-100 fore__wrap d-flex justify-content-between align-items-center border-bottom py-3">
                   <h3 class="h3">Наша продукция</h3>
-                  <div class="d-flex">
+                  <div class="d-flex jsc-btw">
                     <a href="#" class="link fore__link mx-2">Акция</a>
                     <a href="#" class="link fore__link mx-2">Мы советуем</a>
                     <a href="#" class="link fore__link mx-2">Новинка</a>
@@ -228,7 +284,7 @@
                       <span class="text-status-warning me-2">
                         Акция
                       </span>
-                      <span class="text-status-success me-2">
+                      <span class="text-status-new me-2">
                         Новинка
                       </span>
                     </div>
@@ -236,7 +292,7 @@
                       <img src="imgs//bg/top-kosmetologiceskih-apparatov-dla-otkrytia-salona-krasoty-03.webp" alt="">
                     </div>
                     <p class="fore__cart--info d-flex py-3 px-3">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore. 
                     </p>
                     <div class="fore__cart--has py-3 px-3">
                       <span class="text-status-success">
@@ -256,7 +312,7 @@
                       <span class="text-status-warning me-2">
                         Акция
                       </span>
-                      <span class="text-status-success me-2">
+                      <span class="text-status-new me-2">
                         Новинка
                       </span>
                     </div>
@@ -264,7 +320,7 @@
                       <img src="imgs//bg/top-kosmetologiceskih-apparatov-dla-otkrytia-salona-krasoty-03.webp" alt="">
                     </div>
                     <p class="fore__cart--info d-flex py-3 px-3">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore. 
                     </p>
                     <div class="fore__cart--has py-3 px-3">
                       <span class="text-status-success">
@@ -284,7 +340,7 @@
                       <span class="text-status-warning me-2">
                         Акция
                       </span>
-                      <span class="text-status-success me-2">
+                      <span class="text-status-new me-2">
                         Новинка
                       </span>
                     </div>
@@ -292,7 +348,7 @@
                       <img src="imgs//bg/top-kosmetologiceskih-apparatov-dla-otkrytia-salona-krasoty-03.webp" alt="">
                     </div>
                     <p class="fore__cart--info d-flex py-3 px-3">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore. 
                     </p>
                     <div class="fore__cart--has py-3 px-3">
                       <span class="text-status-success">
@@ -312,7 +368,7 @@
                       <span class="text-status-warning me-2">
                         Акция
                       </span>
-                      <span class="text-status-success me-2">
+                      <span class="text-status-new me-2">
                         Новинка
                       </span>
                     </div>
@@ -320,11 +376,11 @@
                       <img src="imgs//bg/top-kosmetologiceskih-apparatov-dla-otkrytia-salona-krasoty-03.webp" alt="">
                     </div>
                     <p class="fore__cart--info d-flex py-3 px-3">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore. 
                     </p>
                     <div class="fore__cart--has py-3 px-3">
-                      <span class="text-status-warning">
-                        Скоро
+                      <span class="text-status-success">
+                        В наличии
                       </span>
                     </div>
                     <div class="fore__cart--price d-flex align-items-center justify-content-start py-3 px-3">
@@ -340,7 +396,7 @@
                       <span class="text-status-warning me-2">
                         Акция
                       </span>
-                      <span class="text-status-success me-2">
+                      <span class="text-status-new me-2">
                         Новинка
                       </span>
                     </div>
@@ -348,35 +404,7 @@
                       <img src="imgs//bg/top-kosmetologiceskih-apparatov-dla-otkrytia-salona-krasoty-03.webp" alt="">
                     </div>
                     <p class="fore__cart--info d-flex py-3 px-3">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore.
-                    </p>
-                    <div class="fore__cart--has py-3 px-3">
-                      <span class="text-status-danger">
-                        Нет в наличии
-                      </span>
-                    </div>
-                    <div class="fore__cart--price d-flex align-items-center justify-content-start py-3 px-3">
-                      <span class="fs-5 d-block">25000 руб.</span>
-                      <span class="fs-6 text-decoration-line-through text-fade d-block ms-2" >25000 руб.</span>
-                    </div>
-
-                  </div>
-
-                  <div class="fore__cart border rounded">
-
-                    <div class="fore__cart--status d-flex py-3 px-3">
-                      <span class="text-status-warning me-2">
-                        Акция
-                      </span>
-                      <span class="text-status-success me-2">
-                        Новинка
-                      </span>
-                    </div>
-                    <div class="fore__cart--img">
-                      <img src="imgs//bg/top-kosmetologiceskih-apparatov-dla-otkrytia-salona-krasoty-03.webp" alt="">
-                    </div>
-                    <p class="fore__cart--info d-flex py-3 px-3">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore. 
                     </p>
                     <div class="fore__cart--has py-3 px-3">
                       <span class="text-status-danger">
@@ -396,7 +424,7 @@
                       <span class="text-status-warning me-2">
                         Акция
                       </span>
-                      <span class="text-status-success me-2">
+                      <span class="text-status-new me-2">
                         Новинка
                       </span>
                     </div>
@@ -404,7 +432,7 @@
                       <img src="imgs//bg/top-kosmetologiceskih-apparatov-dla-otkrytia-salona-krasoty-03.webp" alt="">
                     </div>
                     <p class="fore__cart--info d-flex py-3 px-3">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore. 
                     </p>
                     <div class="fore__cart--has py-3 px-3">
                       <span class="text-status-danger">
@@ -424,7 +452,7 @@
                       <span class="text-status-warning me-2">
                         Акция
                       </span>
-                      <span class="text-status-success me-2">
+                      <span class="text-status-new me-2">
                         Новинка
                       </span>
                     </div>
@@ -432,7 +460,63 @@
                       <img src="imgs//bg/top-kosmetologiceskih-apparatov-dla-otkrytia-salona-krasoty-03.webp" alt="">
                     </div>
                     <p class="fore__cart--info d-flex py-3 px-3">
-                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore.
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore. 
+                    </p>
+                    <div class="fore__cart--has py-3 px-3">
+                      <span class="text-status-danger">
+                        Нет в наличии
+                      </span>
+                    </div>
+                    <div class="fore__cart--price d-flex align-items-center justify-content-start py-3 px-3">
+                      <span class="fs-5 d-block">25000 руб.</span>
+                      <span class="fs-6 text-decoration-line-through text-fade d-block ms-2" >25000 руб.</span>
+                    </div>
+
+                  </div>
+
+                  <div class="fore__cart border rounded">
+
+                    <div class="fore__cart--status d-flex py-3 px-3">
+                      <span class="text-status-warning me-2">
+                        Акция
+                      </span>
+                      <span class="text-status-new me-2">
+                        Новинка
+                      </span>
+                    </div>
+                    <div class="fore__cart--img">
+                      <img src="imgs//bg/top-kosmetologiceskih-apparatov-dla-otkrytia-salona-krasoty-03.webp" alt="">
+                    </div>
+                    <p class="fore__cart--info d-flex py-3 px-3">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore. 
+                    </p>
+                    <div class="fore__cart--has py-3 px-3">
+                      <span class="text-status-danger">
+                        Нет в наличии
+                      </span>
+                    </div>
+                    <div class="fore__cart--price d-flex align-items-center justify-content-start py-3 px-3">
+                      <span class="fs-5 d-block">25000 руб.</span>
+                      <span class="fs-6 text-decoration-line-through text-fade d-block ms-2" >25000 руб.</span>
+                    </div>
+
+                  </div>
+
+                  <div class="fore__cart border rounded">
+
+                    <div class="fore__cart--status d-flex py-3 px-3">
+                      <span class="text-status-warning me-2">
+                        Акция
+                      </span>
+                      <span class="text-status-new me-2">
+                        Новинка
+                      </span>
+                    </div>
+                    <div class="fore__cart--img">
+                      <img src="imgs//bg/top-kosmetologiceskih-apparatov-dla-otkrytia-salona-krasoty-03.webp" alt="">
+                    </div>
+                    <p class="fore__cart--info d-flex py-3 px-3">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ad aperiam saepe accusamus quidem aliquid commodi corporis explicabo non labore. 
                     </p>
                     <div class="fore__cart--has py-3 px-3">
                       <span class="text-status-danger">
@@ -474,74 +558,65 @@
 
             <section class="about py-5">
               <div class="container about__container text-white">
-                <p class="mt-3">
+                <p class="p about__text">
                   О КОМПАНИИ
                 </p>
 
-                <h5 class="h5 mt-5">
+                <h5 class="h5 about__text">
                   Косметологическое оборудование для салонов красоты
                 </h5>
 
                 <div class="d-flex about__grid">
-                  <p class="p d-flex w-75">
+                  <p class="p d-flex about__text w-75">
                     Компания HONKON является профессиональным поставщиком медицинского и эстетического оборудования. Наши усилия сосредоточены на научных исследованиях и разработках , производстве, Рыночной реализации наших оборудований и обслуживании организациий и учреждений, занятых в сфере поддержания красоты на протяжении более 21 года. Компания HONKON гордится своим девизом "Наука создает красоту " , которое позводило производителю занимает лидирующую позицию в области устройств и проборов в медицине и индустрии эстетики.
                   </p>
                   <div class="d-flex flex-column w-25">
-                    <h2 class="h2 text-primary">HONCON</h2>
-                    <p class="text-primary">Medical beauty solutions provider</p>
+                    <h2 class="h2 fw-bold about__text about__text--big text-primary">HONKON</h2>
+                    <p class="text-primary about__text about__text--small">Medical beauty solutions provider</p>
                   </div>
                 </div>
-                <a href="#" class="btn btn-outline-primary mt-5">Подробности</a>
+                <a href="#" class="btn btn-outline-primary">Подробности</a>
               </div>
             </section>
 
         </main>
 
         <!-- footer -->
-        <footer class="footer bg-dark w-100 text-white py-5">
+        <footer class="footer w-100 text-white py-5">
           <div class="container footer__container">
 
-            <div class="row">
+            <div class="row footer__grid">
 
-              <div class="col-4">
-                <h2 class="h2 text-primary py-2">
-                  HONKON
-                </h2>
-                <p class="p">
-                  HONKON является ведущим поставщиком медицинского и косметического оборудования для мирового рынка, а также монополизировал рынок медицинской косметологии в Китае.
-                </p>
-              </div>
-
-              <div class="col-4 d-flex flex-column">
+              <div class="col-md-6 col-8 d-flex footer__grid--padding flex-column">
                 <h4 class="h4 text-white border-bottom py-2">
                   Связаться с нами
                 </h4>
                 <p class="p">Здание №72, район Чжунши, деревня Лиандун У, район Тунчжоу, Пекин, Китай.</p>
                 <a href="tel:+86-13910902829" class="link mt-3">
-                  <i class="icofont-ui-call fs-4 text-primary"></i>
+                  <i class="icofont-ui-call fs-4 text-links"></i>
                   <span class="ms-2">86-13910902829</span>
                 </a>
                 <a href="mailto:mail@russiasales05@honkonoverseas.com" class="link mt-3">
-                  <i class="icofont-email fs-4 text-primary"></i>
+                  <i class="icofont-email fs-4 text-links"></i>
                   <span class="ms-2">russiasales05@honkonoverseas.com</span>
                 </a>
               </div>
 
-              <div class="col-4 d-flex flex-column align-items-end">
+              <div class="col-md-6 col-4 d-flex flex-column align-items-end">
                 <h4 class="h4 text-white border-bottom py-2">
                   Оборудование-наши решения
                 </h4>
 
-                <a href="#" class="link text-white d-block mt-3">
+                <a href="#" class="link link-color d-block mt-3">
                   Замедляющий старение
                 </a>
-                <a href="#" class="link text-white d-block mt-3">
+                <a href="#" class="link link-color d-block mt-3">
                   Пигментация
                 </a>
-                <a href="#" class="link text-white d-block mt-3">
+                <a href="#" class="link link-color d-block mt-3">
                   Чистка лица
                 </a>
-                <a href="#" class="link text-white d-block mt-3">
+                <a href="#" class="link link-color d-block mt-3">
                   Удаление волос
                 </a>
               </div>

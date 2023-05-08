@@ -4,14 +4,19 @@
 @import 'base/_text';
 @import 'base/_ui';
 @import 'base/_animations';
+@import 'base/_fonts';
 
 // @ IMPORT COMPONENTS
 @import 'components/_header';
 @import 'components/_main';
+@import 'components/_card';
+@import 'components/_cards-board';
+
 
 // @ PAGE
 body {
     overflow-x: hidden;
+    
 }
 
 .wrapper {
@@ -22,7 +27,7 @@ body {
     align-items: center;
     justify-content: space-between;
     overflow-x: hidden;
-    font-family: sans-serif;
+    font-family: Open-sans, sans-serif;
 }
 
 

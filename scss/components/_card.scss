@@ -1,0 +1,129 @@
+.main-cards {
+    margin-top: 2rem;
+    padding: 3rem 0 4rem 0 !important;
+}
+
+.card {
+    &__image {
+        position: relative;
+    }
+    &__status {
+        display: flex;
+        gap: 1.5rem;
+        height: inherit;
+        position: absolute;
+        top: 15px;
+        left: 20px; 
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            vertical-align: middle;
+            border-radius: 3px;
+            width: 100%;
+
+        }
+    }
+
+}
+.card-product {
+    &__content {
+        position: relative;
+        width: 100%;
+        height: 80% !important;
+    }
+    &__nav {
+        height: 20%;
+    }
+    &__content--item {
+        height: 100%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        pointer-events: none !important;
+        transition: opacity 0.3s ease;
+        &.active {
+            transition: opacity 0.3s 0.3s ease;
+            pointer-events: all !important;
+            opacity: 1;
+        }
+    }
+    &--table {
+        font-size: 1rem;
+        height: 250px !important;
+        overflow-y: scroll !important;
+    }
+    .text-restrict {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -moz-box;
+        -moz-box-orient: vertical;
+        display: -webkit-box;
+        -webkit-line-clamp: 6;
+        -webkit-box-orient: vertical;
+        line-clamp: 6;
+        box-orient: vertical;
+    }
+}
+::-webkit-scrollbar {
+	width: 0.25rem;
+}  
+::-webkit-scrollbar-thumb {
+	background-color: $primary; 
+}
+.simple-product {
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__card {
+        width: 23%;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        cursor: pointer;
+        
+        & img {
+            transition: transform 0.3s ease;
+        }
+
+        &:nth-child(2), &:nth-child(3) {
+            margin: 0 1%;
+        }
+
+        &:hover {
+            & .simple-product__card--title {
+                color: $primary !important;
+            }
+            & img {
+                transform: scale(1.05);
+            }
+            &::before {
+                opacity: 0.7;
+            }
+        }
+        
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            background-color: $dark;
+            position: absolute;
+            opacity: 0.5;
+            z-index: 1;
+            transition: opacitty 0.3s ease;
+        }
+        &--title {
+            z-index: 2;
+            position: absolute;
+            color: $white;
+            transition: color 0.3s ease;
+        }
+    }
+}
