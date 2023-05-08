@@ -318,6 +318,11 @@
 }
 
 // ---------------------
-#application {
-    z-index: 1000 !important;
+// #application {
+//     z-index: 1000 !important;
+// }
+
+
+.modal-backdrop {
+    --bs-backdrop-zindex: -23432;
 }

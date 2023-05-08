@@ -1059,8 +1059,8 @@ input[type=number]:focus {
   background: #3e454c;
 }
 
-#application {
-  z-index: 1000 !important;
+.modal-backdrop {
+  --bs-backdrop-zindex: -23432;
 }
 
 .main-cards {
