@@ -1,0 +1,29 @@
+.honkon {
+    margin-top: 90px !important;
+
+    margin-bottom: 150px;
+    &__text {
+        display: block !important;
+        border-radius: 10px;
+        border-color: 1px solid $primary !important;
+
+        p {
+            border-color: 1px solid $primary !important;
+        }
+
+    }
+
+    &__certificate {
+
+        &--wdh {
+            max-width: 23% !important;
+        }
+
+
+        &--card {
+            flex-wrap: wrap;
+            
+        }
+    } 
+
+}

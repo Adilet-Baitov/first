@@ -623,6 +623,12 @@
             gap: 10px;
         }
     }
+    .honkon{
+        &__certificate  { 
+            &--wdh {
+                max-width: 30% !important;
+            }
+    }    }   
 }
 
 @media (max-width: 650px) {
@@ -1004,6 +1010,10 @@
             }
         }
     }
+
+    .honkon {
+        margin-bottom: 50px !important  ;
+    }
 }
 
 @media (max-width: 462px) {
@@ -1138,6 +1148,16 @@
         &--desk {
             grid-template-columns: 1fr!important;
             gap: 5px;
+        }
+    }
+    .honkon {
+
+
+        &__certificate {
+            &--wdh {
+                max-width: 50% !important;
+                margin: 0 auto;
+            }
         }
     }
 }

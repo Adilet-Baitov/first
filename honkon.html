@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- @ styles -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="icons/iconfont/icofont.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&family=Oswald:wght@500&display=swap" rel="stylesheet">
+    
+    <!-- @ favicon -->
+    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> -->
+
+    <!-- @ title -->
+    <title>Honkon</title>
+</head>
+
+<body>
+
+    
+    
+    <div class="wrapper">
+
+        <!-- header -->
+        <header class="header border-bottom">
+        <nav class="navbar navbar__center navbar-expand-lg navbar-light bg-none">
+          <div class="container-fluid">
+            <a class="navbar-brand fs-3 logo-text fw-bold text-primary" href="index.html">Honkon</a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse navbar__background" id="navbarSupportedContent">
+              
+            <div class="navbar-links mb-2 mb-lg-0 w-100 d-flex justify-content-center">
+              <ul class="navbar-nav text-end">
+                <div class="btn-group navbar__buttons--display">
+                  <a href="cards-board.html" class="link text-links dropdown__hover h4">Каталог</a>
+                  <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                    <li><a class="dropdown-item" href="#">
+                      Лазерное оборудование                    
+                    </a></li>
+
+                    <li><a class="dropdown-item d-block" href="#">
+                      Оборудование для депиляции                                           
+                    </a></li>
+
+                    <li><a class="dropdown-item" href="#">
+                      Оборудование для депиляции                        
+                    </a></li>
+                  </ul>
+                </div>
+              </ul>
+              <ul class="navbar-nav text-end ">
+                <div class="btn-group navbar__buttons--display">
+                  <a href="#" class="link text-links dropdown__hover h4">Лечение</a>
+                  <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                    <li><a class="dropdown-item" href="#">Лазерное оборудование                        
+                    </a></li>
+
+                    <li><a class="dropdown-item d-block" href="#">Оборудование для депиляции                       
+                    </a></li>
+
+                    <li><a class="dropdown-item" href="#">
+                      Оборудование для депиляции
+                    </a></li>
+                  </ul>
+                </div>
+              </ul>
+              <ul class="navbar-nav text-end ">
+                <div class="btn-group navbar__buttons--display">
+                  <a href="#" class="link text-links dropdown__hover h4">Решения</a>
+                  <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                    <li><a class="dropdown-item" href="#">Замедляющий старение                        
+                    </a></li>
+
+                    <li><a class="dropdown-item d-block" href="#">Чистка лица                       
+                    </a></li>
+
+                    <li><a class="dropdown-item" href="#">
+                      Удаление волос
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                      Выберите диодный лазер для эпиляции.
+                    </a></li>
+                    <li><a class="dropdown-item" href="#">
+                      Пигментация
+                    </a></li>
+                  </ul>
+                </div>
+              </ul>
+              <ul class="navbar-nav text-end ">
+                <div class="btn-group navbar__buttons--display">
+                  <a href="#" class="link text-links dropdown__hover h4">О нас</a>
+                  <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                    <li><a class="dropdown-item" href="#">Лазерное оборудование                        
+                    </a></li>
+
+                    <li><a class="dropdown-item d-block" href="#">Оборудование для депиляции                       
+                    </a></li>
+
+                    <li><a class="dropdown-item" href="#">
+                      Оборудование для депиляции
+                    </a></li>
+                  </ul>
+                </div>
+              </ul>
+            </div>
+              
+              <!-- buttons -->
+              <div class="d-flex navbar__background--pad">
+                <a class="btn header__btn w-25" href="#">
+                    <i class="icofont-ui-call"></i>
+                </a>
+                <a class="btn header__btn w-25" href="#">
+                    <i class="icofont-search-2"></i>
+                </a>
+                <a class="btn header__btn w-25" href="#">
+                  <i class="icofont-user-alt-3"></i>
+                </a>
+                <a class="btn header__btn basket-count w-25" data-count="0" href="#">
+                    <i class="icofont-cart"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        </header>
+
+        <main class="main">
+
+            <section class="honkon mt-5">
+
+
+                <div class="container honkon__container">
+                    
+                    <div class="row d-flex first__flex justify-content-between w-100">
+                        <div class="cards-board--desk">
+                            <nav class="nav nav-tabs d-flex flex-column w-25 me-4" id="nav-tab" role="tablist">
+                                <a class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">О нас</a>
+                            <a class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false">Сертификаты</a>
+                             </nav>
+                             <div class="tab-content" id="nav-tabContent">
+    
+                                <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                                    
+                                    <div class="honkon__card d-flex flex-column justify-content-between">
+                                            
+                                        <!-- <img src="/imgs/bg/aiwj2t74goqbtg7527ipg2bw5c8xmpn8.jpg" alt="" class="img-fluid honkon__img"> -->
+
+                                        <div class="honkon__text">
+
+                                            <p class="p">
+
+                                                Компания HONKON  является профессиональным поставщиком медицинского и эстетического оборудования. Наши усилия сосредоточены на научных исследованиях и разработках , производстве, Рыночной реализации наших оборудований и обслуживании организациий и учреждений, занятых в сфере поддержания красоты на протяжении более 21 года.
+
+К числу наших разработок относятся: кожный анализатор, EOQ-Switch Nd:YAG лазер для удаления тату и пигментации, Эрбиевый лазер 1550нм, Фракционный лазер СО2, диодный лазер для удаления волос, Элос, Газожидкостный пилинг, мезоинжектор , криолиполиз, аппарат вакуумного гидро-пилинга, ролликовый массаж для коррекции фигуры и т.д. На все приборы получено одобрение международных организаций по стандартизации :ISO9001, ISO13485, CE93/42/EEC, EMC, и SFDA.
+
+Компания HONKON расположена в БДА, Пекин, Китай, иммет собственный головной офис и предприятие(4768м2) , штат составляет 600 сотрудников. Кроме того,у нас работает высококлассная команда инженеров, занятых в отделе научных разработок и развития, которые обеспечивают выпуск оригинальных по своему решению (ОЕМ ) И дизайну ( ОДМ) приборов, проводят тренинги и обеспечивают полную технологическую и сервисную поддержку. Компания HONKON является известным брендом с заслуженной репутациией в Америке, Европе, Ближенем Востоке, В Океании и Азиатском регионе.
+
+Компания HONKON гордится своим девизом "Наука создает красоту " , которое позводило производителю занимает лидирующую позицию в области устройств и проборов в медицине и индустрии эстетики.
+
+                                            </p>
+
+                                        </div>
+
+                                        <div class="honkon__about d-flex mt-5">
+
+                                            <!-- ФОТО КОМПАНИИ -->
+                                            <img src="/imgs/bg/bg1.jpg" alt="" class="img-fluid">
+
+
+                                        </div>
+
+                                    </div>
+
+
+                                </div>
+    
+                                <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-sidebar-tab">
+                                    
+                                    <div class="honkon__certificate d-flex flex-column" style="gap: 10px">
+
+                                        <h3 class="h3 text-primary border-bottom">Сертификат FDA</h3>
+
+                                        <div class="honkon__certificate--card d-flex" style="gap: 10px">
+                                        
+                                            <div class="honkon__certificate--wdh">
+
+                                                <!-- <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </a> -->
+
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">      Сертификат</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                                <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                                
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="honkon__certificate--wdh">
+
+                                                <!-- <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </a> -->
+
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">Сертификат</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                                <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                           
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="honkon__certificate--wdh">
+
+                                                <!-- <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </a> -->
+
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">Сертификат</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                                <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                           
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="honkon__certificate--wdh">
+
+                                                <!-- <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </a> -->
+
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">Сертификат</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                                <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                            
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                        
+                                        </div>
+
+                                    </div>
+
+                                    <div class="honkon__certificate d-flex flex-column mt-3" style="gap: 10px">
+
+                                        <h3 class="h3 text-primary border-bottom">Медицинский CE</h3>
+
+                                        <div class="honkon__certificate--card d-flex" style="gap: 10px">
+                                        
+                                            <div class="honkon__certificate--wdh">
+
+                                                <!-- <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </a> -->
+
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">      Сертификат</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                                <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                             
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="honkon__certificate--wdh">
+
+                                                <!-- <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </a> -->
+
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">      Сертификат</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                                <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                              
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                            <div class="honkon__certificate--wdh">
+
+                                                <!-- <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </a> -->
+
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">      Сертификат</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                                <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                              
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                            <div class="honkon__certificate--wdh">
+
+                                                <!-- <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </a> -->
+
+                                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                    <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                </button>
+
+                                                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                    <div class="modal-dialog">
+                                                      <div class="modal-content">
+                                                        <div class="modal-header">
+                                                          <h5 class="modal-title" id="exampleModalLabel">      Сертификат</h5>
+                                                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
+                                                        </div>
+                                                        <div class="modal-body">
+                                                            <a href="imgs/bg/certificate.jpg" class="link certificate--link">
+                                                                <img src="imgs/bg/certificate.jpg" class="img img-fluid" alt="">
+                                                            </a>
+                                                        </div>
+                                                        <div class="modal-footer">
+                                                          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+                                                               
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                </div>
+                                                
+                                            </div>
+
+                                        
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                
+    
+    
+                             </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </section>
+
+
+        </main>
+
+      
+        <footer class="footer w-100 text-white py-5">
+        <div class="container footer__container">
+
+          <div class="row footer__grid">
+
+            <div class="col-md-6 col-8 d-flex footer__grid--padding flex-column">
+              <h4 class="h4 text-white border-bottom py-2">
+                Связаться с нами
+              </h4>
+              <p class="p">Здание №72, район Чжунши, деревня Лиандун У, район Тунчжоу, Пекин, Китай.</p>
+              <a href="tel:+86-13910902829" class="link mt-3 link-color1">
+                <i class="icofont-ui-call fs-4 text-links"></i>
+                <span class="ms-2">86-13910902829</span>
+              </a>
+              <a href="mailto:mail@russiasales05@honkonoverseas.com" class="link link-color1 mt-3">
+                <i class="icofont-email fs-4 text-links"></i>
+                <span class="ms-2">russiasales05@honkonoverseas.com</span>
+              </a>
+            </div>
+
+            <div class="col-md-6 col-4 d-flex flex-column align-items-end">
+              <h4 class="h4 text-white border-bottom py-2">
+                Оборудование-наши решения
+              </h4>
+
+              <a href="#" class="link link-color1 d-block mt-3">
+                Замедляющий старение
+              </a>
+              <a href="#" class="link link-color1 d-block mt-3">
+                Пигментация
+              </a>
+              <a href="#" class="link link-color1 d-block mt-3">
+                Чистка лица
+              </a>
+              <a href="#" class="link link-color1 d-block mt-3">
+                Удаление волос
+              </a>
+            </div>
+
+          </div>
+
+        </div>
+        </footer>
+
+
+
+    </div>
+
+
+    <script src="js/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

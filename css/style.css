@@ -1063,10 +1063,6 @@ input[type=number]:focus {
   z-index: 1000 !important;
 }
 
-.modal-backdrop {
-  z-index: -100;
-}
-
 .main-cards {
   margin-top: 2rem;
   padding: 3rem 0 4rem 0 !important;
@@ -1268,6 +1264,26 @@ input[type=number]:focus {
 .cards-board nav .active {
   background-color: #083C89 !important;
   color: #ffffff !important;
+}
+
+.honkon {
+  margin-top: 90px !important;
+  margin-bottom: 150px;
+}
+.honkon__text {
+  display: block !important;
+  border-radius: 10px;
+  border-color: 1px solid #083C89 !important;
+}
+.honkon__text p {
+  border-color: 1px solid #083C89 !important;
+}
+.honkon__certificate--wdh {
+  max-width: 23% !important;
+}
+.honkon__certificate--card {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 body {
@@ -1904,6 +1920,9 @@ body {
     grid-template-columns: 1fr !important;
     gap: 10px;
   }
+  .honkon__certificate--wdh {
+    max-width: 30% !important;
+  }
 }
 @media (max-width: 650px) {
   .check__card-items {
@@ -2326,6 +2345,9 @@ body {
     width: 45%;
     margin: 5px;
   }
+  .honkon {
+    margin-bottom: 50px !important;
+  }
 }
 @media (max-width: 462px) {
   .two__carts {
@@ -2445,5 +2467,9 @@ body {
   .cards-board--desk {
     grid-template-columns: 1fr !important;
     gap: 5px;
+  }
+  .honkon__certificate--wdh {
+    max-width: 50% !important;
+    margin: 0 auto;
   }
 }
