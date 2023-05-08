@@ -59,10 +59,10 @@
 
                 .dropdown-menu {
                     display: block !important;
-                    margin-top: 52px !important;
+                    margin-top: 40px !important;
 
                     width: fit-content !important;
-                    display: flex  !important;
+
                     gap: 10px;
                     // flex-wrap: wrap;
                     // flex-direction: column;
@@ -80,6 +80,7 @@
             border-color: $white !important;
             color: $dark;
             transition: 0.3s;
+            padding: 5px;
             &:hover {
                 color: $primary;
                 transition: 0.3s;

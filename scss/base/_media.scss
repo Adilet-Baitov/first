@@ -139,22 +139,24 @@
             }
             &__buttons--display {
                 display: block !important;
-            }
-            .dropdown-menu {
-              
-                
-                li {
-                    .dropdown-item {
-                        text-align: end;
+                &:hover {
+                    .dropdown-menu {
+                        margin-top: 0 !important;
+                        margin-left: auto !important ;
                     }
                 }
             }
-
+            
         }
         .basket-count::before {
             top: 30%;
             left: 55%;
             font-size: 0.75rem;
+        }
+        .navbar-links {
+            justify-content: flex-end !important;
+            flex-direction: column;
+            gap: 10px;
         }
     }
 
@@ -165,8 +167,10 @@
         align-content: flex-start !important;
         padding: 2rem 0;
     }
+
     .first {
-        height: 100vh;
+        height: 600px !important;
+
         &__flex { 
             justify-content: center !important;
             align-items: center !important;
@@ -186,6 +190,10 @@
         }
     }
     .two {
+        &__carts {
+            display: grid !important; 
+            grid-template-columns: 1fr 1fr !important;
+        }
         &__cart {
             padding: 0.5rem !important;
             width: 100%;
@@ -258,6 +266,14 @@
             margin: 0 auto !important;
         }
         
+    }
+
+    .simple-product {
+        &__card {
+            &--title {
+                font-size: 1rem;
+            }
+        }
     }
 
 }
@@ -489,7 +505,7 @@
         }
     }
     .first {
-        height: 120vh;
+        height: 600px;
         
         &__flex {
             flex-direction: column;
@@ -502,10 +518,7 @@
     }
     .two {
         padding: 2rem 2rem 0;
-        &__carts {
-            display: grid !important; 
-            grid-template-columns: 1fr 1fr !important;
-        }
+        
         &__cart {
             height: 230px;
         }
@@ -589,6 +602,8 @@
 }
 
 @media (max-width: 650px) {
+    
+
     .check {
 
         &__card-items {
@@ -1054,6 +1069,11 @@
         &__carts {
             .fore__cart {
                 width: 100% !important;
+            }
+        }
+        &__cart {
+            &:hover {
+                transform: translateY(-0.05rem) !important;
             }
         }
     }
