@@ -26,6 +26,12 @@
         }
         
     }
+    .cards-board {
+        &__grid {
+            grid-template-columns: 1fr 1fr !important;
+            gap: 10px;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -264,15 +270,29 @@
         }
         &__cart {
             margin: 0 auto !important;
+            width: 80%;
+            
+
+            p {
+                max-height: 50px !important;
+                overflow: hidden;
+            }
         }
         
     }
 
     .simple-product {
+        margin-top: 1rem !important;
         &__card {
             &--title {
                 font-size: 1rem;
             }
+        }
+    }
+    .card-product  {
+        &--info {
+            height: 250px;
+            margin-top: 2rem ;
         }
     }
 
@@ -595,8 +615,8 @@
             grid-template-columns: 1.5fr 2.5fr;
         }
         &__grid {
-            grid-template-columns: 1fr!important;
-            gap: 5px;
+            grid-template-columns: 1fr !important;
+            gap: 10px;
         }
     }
 }
@@ -968,6 +988,15 @@
                 &:nth-child(2) {
                     align-items: center !important;
                 }
+            }
+        }
+    }
+    .simple-product {
+        &__cards {
+            flex-wrap: wrap;
+            a {
+                width: 45%;
+                margin: 5px;
             }
         }
     }

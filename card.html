@@ -32,56 +32,81 @@
 
               <div class="collapse navbar-collapse navbar__background" id="navbarSupportedContent">
                 
-                <ul class="navbar-nav text-end me-auto mb-2 mb-lg-0 w-100 d-flex justify-content-center">
+              <div class="navbar-links mb-2 mb-lg-0 w-100 d-flex justify-content-center">
+                <ul class="navbar-nav text-end">
                   <div class="btn-group navbar__buttons--display">
-                    <button type="button" class="btn btn-primary navbar__link--style">Каталог</button>
-                      <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-                      <li><a class="dropdown-item" href="#">808нм Диодный Лазер для удаления волос</a></li>
-                      <li><a class="dropdown-item" href="#">Пикосекундный Лазер</a></li>
-                      <li><a class="dropdown-item" href="#">1064нм ND: YAG Лазер</a></li>
-                      <li><a class="dropdown-item" href="#">808нм Диодный Лазер для удаления волос</a></li>
-                      <li><a class="dropdown-item" href="#">Пикосекундный Лазер</a></li>
-                      <li><a class="dropdown-item" href="#">1064нм ND: YAG Лазер</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="#">Весь каталог</a></li>
+                    <a href="/cards-board.html" class="link text-links dropdown__hover h4">Каталог</a>
+                    <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                      <li><a class="dropdown-item" href="#">
+                        Лазерное оборудование                    
+                      </a></li>
+
+                      <li><a class="dropdown-item d-block" href="#">
+                        Оборудование для депиляции                                           
+                      </a></li>
+
+                      <li><a class="dropdown-item" href="#">
+                        Оборудование для депиляции                        
+                      </a></li>
                     </ul>
-                  </div>               
-                  
-                  <div class="btn-group navbar__buttons--display">
-                    <button type="button" class="btn btn-primary navbar__link--style">Лечение</button>
-                      <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    
-                    <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-                      
-                    </ul> -->
-                    
                   </div>
-                  <div class="btn-group navbar__buttons--display">
-                    <button type="button" class="btn btn-primary navbar__link--style">Решения</button>
-                      <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    
-                    <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-                      
-                    </ul> -->
-                    
-                  </div> 
-                  <div class="btn-group navbar__buttons--display">
-                    <button type="button" class="btn btn-primary navbar__link--style">О нас</button>
-                      <span class="visually-hidden">Toggle Dropdown</span>
-                    </button>
-                    
-                    <!-- <ul class="dropdown-menu" aria-labelledby="dropdownMenuReference">
-                      
-                    </ul> -->
-                    
-                  </div>  
-
                 </ul>
+                <ul class="navbar-nav text-end ">
+                  <div class="btn-group navbar__buttons--display">
+                    <a href="#" class="link text-links dropdown__hover h4">Лечение</a>
+                    <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                      <li><a class="dropdown-item" href="#">Лазерное оборудование                        
+                      </a></li>
 
+                      <li><a class="dropdown-item d-block" href="#">Оборудование для депиляции                       
+                      </a></li>
+
+                      <li><a class="dropdown-item" href="#">
+                        Оборудование для депиляции
+                      </a></li>
+                    </ul>
+                  </div>
+                </ul>
+                <ul class="navbar-nav text-end ">
+                  <div class="btn-group navbar__buttons--display">
+                    <a href="#" class="link text-links dropdown__hover h4">Решения</a>
+                    <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                      <li><a class="dropdown-item" href="#">Замедляющий старение                        
+                      </a></li>
+
+                      <li><a class="dropdown-item d-block" href="#">Чистка лица                       
+                      </a></li>
+
+                      <li><a class="dropdown-item" href="#">
+                        Удаление волос
+                      </a></li>
+                      <li><a class="dropdown-item" href="#">
+                        Выберите диодный лазер для эпиляции.
+                      </a></li>
+                      <li><a class="dropdown-item" href="#">
+                        Пигментация
+                      </a></li>
+                    </ul>
+                  </div>
+                </ul>
+                <ul class="navbar-nav text-end ">
+                  <div class="btn-group navbar__buttons--display">
+                    <a href="#" class="link text-links dropdown__hover h4">О нас</a>
+                    <ul class="dropdown-menu dropdown__hover" aria-labelledby="dropdownMenuReference">
+                      <li><a class="dropdown-item" href="#">Лазерное оборудование                        
+                      </a></li>
+
+                      <li><a class="dropdown-item d-block" href="#">Оборудование для депиляции                       
+                      </a></li>
+
+                      <li><a class="dropdown-item" href="#">
+                        Оборудование для депиляции
+                      </a></li>
+                    </ul>
+                  </div>
+                </ul>
+              </div>
+                
                 <!-- buttons -->
                 <div class="d-flex navbar__background--pad">
                   <a class="btn header__btn w-25" href="#">
@@ -107,14 +132,14 @@
             <section class="card-product py-5">
                 <div class="container card-product__container">
                     <div class="row">
-                        <div class="col-6 d-flex card__image  px-2">
+                        <div class="col-12 col-md-6  d-flex card__image  px-2">
                             <img src="/imgs/bg/main_1506678016793.jpg" alt="" class="img-fluid rounded">
                             <div class="card__status">
                                 <p class="p text-status-success p-2">Новинка</p>
                                 <p class="p text-status-warning p-2">Акция</p>
                             </div>
                         </div>
-                        <div class="col-6 d-flex flex-column card-product__ justify-content-between px-2">
+                        <div class="col-12 col-md-6 d-flex flex-column card-product--info justify-content-between px-2">
                             <div class="card-product__nav pb-3">
                                 <button type="button" class="btn btn-card--desc">
                                     Описание
@@ -264,11 +289,11 @@
                   Связаться с нами
                 </h4>
                 <p class="p">Здание №72, район Чжунши, деревня Лиандун У, район Тунчжоу, Пекин, Китай.</p>
-                <a href="tel:+86-13910902829" class="link mt-3">
+                <a href="tel:+86-13910902829" class="link mt-3 link-color1">
                   <i class="icofont-ui-call fs-4 text-links"></i>
                   <span class="ms-2">86-13910902829</span>
                 </a>
-                <a href="mailto:mail@russiasales05@honkonoverseas.com" class="link mt-3">
+                <a href="mailto:mail@russiasales05@honkonoverseas.com" class="link link-color1 mt-3">
                   <i class="icofont-email fs-4 text-links"></i>
                   <span class="ms-2">russiasales05@honkonoverseas.com</span>
                 </a>
@@ -279,16 +304,16 @@
                   Оборудование-наши решения
                 </h4>
 
-                <a href="#" class="link link-color d-block mt-3">
+                <a href="#" class="link link-color1 d-block mt-3">
                   Замедляющий старение
                 </a>
-                <a href="#" class="link link-color d-block mt-3">
+                <a href="#" class="link link-color1 d-block mt-3">
                   Пигментация
                 </a>
-                <a href="#" class="link link-color d-block mt-3">
+                <a href="#" class="link link-color1 d-block mt-3">
                   Чистка лица
                 </a>
-                <a href="#" class="link link-color d-block mt-3">
+                <a href="#" class="link link-color1 d-block mt-3">
                   Удаление волос
                 </a>
               </div>

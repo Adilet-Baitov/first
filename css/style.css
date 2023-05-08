@@ -362,6 +362,10 @@ input[type=number]:focus {
   padding: 10px 15px;
 }
 
+.link-color1 {
+  color: #BBDCFF !important;
+}
+
 @-webkit-keyframes click {
   0% {
     width: 0;
@@ -1294,6 +1298,10 @@ body {
     display: grid !important;
     grid-template-columns: 1fr 1fr 1fr !important;
   }
+  .cards-board__grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 10px;
+  }
 }
 @media (max-width: 1024px) {
   .pays__filter {
@@ -1506,9 +1514,21 @@ body {
   }
   .fore__cart {
     margin: 0 auto !important;
+    width: 80%;
+  }
+  .fore__cart p {
+    max-height: 50px !important;
+    overflow: hidden;
+  }
+  .simple-product {
+    margin-top: 1rem !important;
   }
   .simple-product__card--title {
     font-size: 1rem;
+  }
+  .card-product--info {
+    height: 250px;
+    margin-top: 2rem;
   }
 }
 @media (max-width: 880px) {
@@ -1865,7 +1885,7 @@ body {
   }
   .cards-board__grid {
     grid-template-columns: 1fr !important;
-    gap: 5px;
+    gap: 10px;
   }
 }
 @media (max-width: 650px) {
@@ -2280,6 +2300,14 @@ body {
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
+  }
+  .simple-product__cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .simple-product__cards a {
+    width: 45%;
+    margin: 5px;
   }
 }
 @media (max-width: 462px) {
