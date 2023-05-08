@@ -51,11 +51,14 @@ window.addEventListener('DOMContentLoaded', () => {
     };
     tabsToggler(tabs, pills);
     
-    var myModal = document.getElementById('myModal')
-    var myInput = document.getElementById('myInput')
+    // let myModal = document.getElementById('myModal')
+    // let myInput = document.getElementById('myInput')
     
-    myModal.addEventListener('shown.bs.modal', function () {
-      myInput.focus()
-    })
+    // myModal.addEventListener('shown.bs.modal', function () {
+    //   myInput.focus()
+    //   console.log(myInput);
+    // })
+
+    // console.log(myInput);
 
 });

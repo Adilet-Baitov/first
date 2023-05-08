@@ -1059,6 +1059,14 @@ input[type=number]:focus {
   background: #3e454c;
 }
 
+#application {
+  z-index: 1000 !important;
+}
+
+.modal-backdrop {
+  z-index: -100;
+}
+
 .main-cards {
   margin-top: 2rem;
   padding: 3rem 0 4rem 0 !important;
