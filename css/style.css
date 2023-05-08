@@ -336,6 +336,9 @@ input[type=number]:focus {
 .form-control:hover, .text-area:hover {
   border-color: #083C89;
 }
+.form-control--big {
+  height: 50px !important;
+}
 
 .text-area {
   height: 100px;
@@ -1384,6 +1387,7 @@ body {
   .header .navbar__background {
     margin-top: 1.5rem !important;
     padding: 10px !important;
+    border-bottom: 1px solid #969696;
     position: absolute;
     top: 3rem;
     left: 0 !important;
