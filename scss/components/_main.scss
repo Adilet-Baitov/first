@@ -253,7 +253,7 @@
 }
 
 .five {
-    background-image: url('/imgs/bg/bg1.jpg');
+    background-image: url('imgs/bg/bg1.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,12 +317,4 @@
     background: $background-footer;
 }
 
-// // ---------------------
-// // #application {
-// //     z-index: 1000 !important;
-// // }
 
-
-// .modal-backdrop {
-//     --bs-backdrop-zindex: -23432;
-// }
