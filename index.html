@@ -179,40 +179,7 @@
                     </ul>
                     
                     <button type="button" class="btn btn-primary mt-2" data-bs-toggle="modal" data-bs-target="#application" data-bs-whatever="@getbootstrap">Отправить заявку на оборудование</button>
-                    <div class="modal fade" id="application" style="z-index: 221321 !important; " tabindex="-1" aria-labelledby="applicationLabel" aria-hidden="false">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <h5 class="modal-title" id="applicationLabel">Отправить заявку на оборудование</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button>
-                          </div>
-                          <div class="modal-body">
-                            <form>
-                              <div class="mb-3">
-                                <label for="recipient-name" class="col-form-label">Имя</label>
-                                <input type="text" class="form-control" id="recipient-name">
-                              </div>
-                              <div class="mb-3">
-                                <label for="exampleFormControlInput1" class="form-label">Email</label>
-                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-                              </div>
-                              <div class="mb-3">
-                                <label for="formGroupExampleInput2">Телефон</label>
-                                <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="+(   )">
-                              </div>
-                              <div class="mb-3">
-                                <label for="message-text" class="col-form-label">Сообщение:</label>
-                                <textarea class="form-control form-control--big" id="message-text"></textarea>
-                              </div>
-                            </form>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
-                            <button type="button" class="btn btn-primary">Отправить сообщение</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+
                   </div> 
 
                 </div>
@@ -658,6 +625,41 @@
         </footer>
 
     </div>
+
+      
+    <!-- Modal -->
+    <div class="modal fade" id="application" tabindex="-1" aria-labelledby="applicationLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+      <form  class="modal-content">
+          <div class="modal-header">
+          <h5 class="modal-title" id="applicationLabel">Отправить заявку на оборудование</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Имя</label>
+              <input type="text" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Email</label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+              <label for="formGroupExampleInput2">Телефон</label>
+              <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="+(   )">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Сообщение:</label>
+              <textarea class="form-control form-control--big" id="message-text"></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary">Отправить сообщение</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Закрыть</button>
+          </div>
+      </div>
+      </div>
+  </div>
 
     <script src="js/vendors/bootstrap/bootstrap.bundle.min.js"></script>
     <script src="js/scripts.js"></script>
